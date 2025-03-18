@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Upload Page Styles */
+.upload-container {
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.app-title {
+  color: #ff7e5f;
+  margin-bottom: 16px;
+}
+
+.dropzone-container {
+  display: block;
+  padding: 40px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone-container:hover {
+  border-color: #ff7e5f;
+}
+
+.dropzone-container.has-file {
+  background-color: #f9f9f9;
+}
+
+.dropzone-text {
+  font-size: 16px;
+  color: #555;
+}
+
+.file-size-limit {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.file-info {
+  margin-bottom: 10px;
+}
+
+.file-size {
+  color: #666;
+}
+
+.progress-bar-container {
+  height: 6px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  margin: 16px 0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ff7e5f;
+  transition: width 0.3s ease;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.upload-button {
+  background: #ff7e5f;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-button:hover {
+  background: #e86e50;
+}
+
+.upload-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Shared File Card Styles */
+.shared-file-card {
+  margin-top: 0;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.success-title {
+  color: #ff7e5f;
+  margin-bottom: 20px;
+}
+
+/* Tab Navigation Styles */
+.tabs-navigation {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  color: #555;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: #ff7e5f;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #ff7e5f;
+}
+
+.tab-content {
+  padding: 10px;
+}
+
+/* QR Code Tab Styles */
+.qr-container {
+  text-align: center;
+}
+
+.qr-instructions {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.qr-code-wrapper {
+  display: inline-block;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.qr-note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
+}
+
+/* Share Link Tab Styles */
+.link-container {
+  text-align: center;
+}
+
+.link-instructions {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.link-box {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  padding: 8px;
+  position: relative;
+}
+
+.link-text {
+  word-break: break-all;
+  text-align: left;
+  padding: 4px 8px;
+  padding-right: 60px;
+  font-size: 14px;
+  color: #333;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.copy-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background: #e86e50;
+}
+
+.open-link-button {
+  display: inline-block;
+  background: #ff7e5f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.open-link-button:hover {
+  background: #e86e50;
+}
+
+/* Share Another File Button */
+.reset-button-container {
+  margin-top: 30px;
+}
+
+.reset-button {
+  background: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #444;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
+}

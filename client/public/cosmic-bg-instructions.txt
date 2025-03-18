@@ -1,0 +1,8 @@
+Please download a cosmic/space background image and save it as:
+/client/public/cosmic-bg.jpg
+
+You can find free cosmic background images on sites like:
+- Unsplash: https://unsplash.com/s/photos/cosmic-background
+- Pexels: https://www.pexels.com/search/cosmic%20background/
+
+Look for a purple/blue cosmic nebula background similar to the one in the reference image.

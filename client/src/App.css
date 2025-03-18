@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #c46e3b;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Upload Page Styles */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dropzone {
+  width: 400px;
+  height: 300px;
+  border: 2px dashed #c46e3b;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropzone:hover {
+  background-color: #fff8f3;
+}
+
+.dropzone-icon {
+  font-size: 48px;
+  color: #c46e3b;
+  margin-bottom: 20px;
+}
+
+.dropzone p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.file-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.btn {
+  background-color: #c46e3b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #a85a2e;
+}
+
+.btn:disabled {
+  background-color: #d9b8a3;
+  cursor: not-allowed;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #c46e3b;
+  transition: width 0.3s ease;
+}
+
+/* File Sharing Page Styles */
+.file-sharing-page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 140px);
+  background-color: #c46e3b;
+}
+
+.file-details-container {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-details-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.file-details-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.file-details-header h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.file-name {
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.file-size {
+  color: #666;
+}
+
+.share-tabs {
+  margin: 30px 0;
+}
+
+.tab-headers {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  color: #c46e3b;
+  border-bottom: 3px solid #c46e3b;
+}
+
+.tab-content {
+  min-height: 280px;
+}
+
+.qr-tab, .link-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.qr-instructions, .link-instructions {
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.link-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.link-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.copy-btn {
+  background-color: #c46e3b;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #a85a2e;
+}
+
+.error {
+  color: #e74c3c;
+  margin: 10px 0;
+}
+
+.download-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.download-btn {
+  background-color: #c46e3b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #a85a2e;
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.feature-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  font-size: 24px;
+}
+
+.feature-text {
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dropzone {
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .file-details-card {
+    padding: 20px;
+  }
+  
+  .features-section h2 {
+    font-size: 24px;
+  }
+  
+  .feature-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Loading and Error States */
+.loading-spinner {
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.error-message {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
